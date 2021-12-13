@@ -1,0 +1,134 @@
+<html lang="">
+<head>
+    <title>OOPS CONCEPTS IN CALCULATOR PROGRAM</title>
+    <style>
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .topnav a {
+            float: right;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color:aqua;
+            color: white;
+        }
+        .history {
+            margin: 0;
+            padding: 5px;
+            background-color: lightgray;
+        }
+        .b1{
+            color: black;
+            font-family: Georgia;
+            text-decoration-color: lightslategray;
+        }
+        .history > h1 {
+            margin: 10px;
+            padding: 5px;
+            background-color:transparent;
+        }
+
+        header{
+            text-align: center;
+            color:whitesmoke;
+
+        }
+
+        footer {
+            text-align: center;
+            padding: 3px;
+            background-color: darkslategrey;
+            color: white;
+        }
+        .subHistory {
+            margin: 4px;
+            font-family: Georgia;
+            background: white;
+            margin:5px;
+            padding:5px;
+        }
+        header {
+            width: 1250px;
+            height: 90px;
+            background-image: url('bubhead.jpg');
+        }
+    </style>
+</head>
+<body style="background-color:powderblue;">
+
+<header>
+
+    <h1 class="b1">OOPS CONCEPTS IN CALCULATOR PROGRAM</h1>
+</header>
+    <a class="active" href="/Article 1">python</a>
+    <a class="active" href="/Article 2">AAA TESTING</a>
+    <a class="active" href="/Article 3">Calculator</a>
+    <a class="active" href="/Article 4">Seperation of concerns</a>
+    <a class="active" href="/">Calculator simulation</a>
+
+<article class=OOPS>
+    <p class="b1">Polymorphism</p>
+    <p>
+        the structure of a program which consists of a class and methods in it with objects and some
+        variables to pass through it.
+        In our calculator program, a class named Calculator is with five different methods with a prefixed result as 0 and four different variables in four different methods which will give the desired
+        output.
+    </p>
+    <img src="{{url_for('static', filename='img1.jpeg')}}">
+</article>
+<article class=OOPS>
+    <p class="b1">Encapsulation</p>
+    <p>
+        It describes the idea of wrapping data and the methods that work on data within one unit. This
+        puts restrictions on accessing variables and methods directly and can prevent the accidental
+        modification of data. To prevent accidental change, an object’s variable can only be changed by
+        an object’s method. Those types of variables are known as private variable.
+
+        The variable result is made private in the program and it is declared in the function with the
+        object self.
+    </p>
+    <img src="{{url_for('static', filename='img2.jpeg')}}">
+</article>
+<article class=OOPS>
+    <p class="b1">Abstraction</p>
+    <p>
+        Abstraction is used to hide the internal functionality of the function from the users. The users
+        only interact with the basic implementation of the function, but inner working is hidden.</p>
+    <img src="{{url_for('static', filename='img1.jpeg')}}">
+     <p>In the calculator program the results of the variables of classes addition, subtraction,
+        multiplication , division are derived from the variables used in class calculation
+    </p>
+    <img src="{{url_for('static', filename='img3.jpeg')}}">
+</article>
+<article class=OOPS>
+    <p class="b1">Inheritance</p>
+    <p>
+        So in inheritance a class calculator has different methods add_number, subtracy_number,
+        multiply_number, divide_number which are depicted from classes addition,
+        subtraction,multiplication and division.
+        This means that the classes addition, subtraction, multiplication, and division are the subclasses
+        of the class calculator.
+    </p>
+    <img src="{{url_for('static', filename='img2.jpeg')}}">
+</article>
+
+    <footer>
+        <p>Calculator<br>
+            <a href="Varun:vj6@njit.edu">Varun Jagannathan</a></p>
+    </footer>
+
+</body>
+</html>

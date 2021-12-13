@@ -1,0 +1,136 @@
+<html lang="">
+<head>
+    <title>Seperation of Concerns</title>
+    <style>
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .topnav a {
+            float: right;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color:aqua;
+            color: white;
+        }
+        .history {
+            margin: 0;
+            padding: 5px;
+            background-color: lightgray;
+        }
+        .b1{
+            color: black;
+            font-family: Georgia;
+            text-decoration-color: lightslategray;
+        }
+        .history > h1 {
+            margin: 10px;
+            padding: 5px;
+            background-color:transparent;
+        }
+
+        header{
+            text-align: center;
+            color:whitesmoke;
+
+        }
+
+        footer {
+            text-align: center;
+            padding: 3px;
+            background-color: darkslategrey;
+            color: white;
+        }
+        .subHistory {
+            margin: 4px;
+            font-family: Georgia;
+            background: white;
+            margin:5px;
+            padding:5px;
+        }
+        header {
+            width: 1250px;
+            height: 90px;
+            background-image: url('bubhead.jpg');
+        }
+    </style>
+</head>
+<body style="background-color:powderblue;">
+
+<header>
+
+    <h1 class="b1">Seperation of concerns</h1>
+</header>
+    <a class="active" href="/Article 1">python</a>
+    <a class="active" href="/Article 2">AAA TESTING</a>
+    <a class="active" href="/Article 3">Calculator</a>
+    <a class="active" href="/Article 4">Seperation of concerns</a>
+    <a class="active" href="/">Calculator simulation</a>
+
+<article class=OOPS>
+    <p class="b1">Seperation of concerns</p>
+    <p> Separation of concerns is a software architecture design pattern/principle for separating an application into distinct sections, so each section addresses a separate concern. At its essence, Separation of concerns is about order.
+        </p>
+</article>
+<article class="subHistory">
+    <ul>
+        <li>Seperation of Concerns in Calculator Program</li>
+        <p><ul>
+        <li>The Seperation of Concerns concept is used in the Calculator program in such a way that the class calculator
+            is divided into seperate classes like addition, subtraction, multiplication and division.</li>
+        <li> The class calculation in the program Calculation has the declaration of the object and the variables and the class is used as a parameters to the other classes
+        like addition, subtraction, multiplication and division.</li>
+        <li> The program Calculator_test is used to write the custom test cases for the calculator. </li>
+        <li> The program Main is used to define the methods for the operations of the calculator.</li>
+        <li> The program Addition is used to perform the addition operation.</li
+        <li> The program Subtraction is used to perform the subtraction operation.</li>
+        <li> The program Multiplication is used to perform the multiplication operation.</li>
+        <li> The program Division is used to perform the division operation.</li>
+        <li> THe program Calculator is used to declare the methods and print the end result of the calculator.</li>
+
+
+    </ul>
+
+</article>
+<article class="subHistory">
+    <ul>
+        <li>Separation of concerns - advantages</li>
+        <p>Separation of Concerns implemented in software architecture would have several advantages:
+        <ul>
+       <li> Lack of duplication and singularity of purpose of the individual components render the overall system easier to maintain.</li>
+       <li> The system becomes more stable as a byproduct of the increased maintainability. </li>
+       <li> The strategies required to ensure that each component only concerns itself with a single set of cohesive responsibilities often result in natural extensibility points. </li>
+       <li> The decoupling which results from requiring components to focus on a single purpose leads to components which are more easily reused in other systems, or different contexts within the same system. </li>
+       <li> The increase in maintainability and extensibility can have a major impact on the marketability and adoption rate of the system. </li>
+    </ul></p>
+
+    </ul>
+
+
+
+    <footer>
+        <p>Seperation of Concerns<br>
+            <a href="Varun:vj6@njit.edu">Varun Jagannathan</a></p>
+    </footer>
+
+</body>
+</html>
+
+
+
+
+
+
+

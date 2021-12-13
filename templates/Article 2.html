@@ -1,0 +1,145 @@
+<html lang="">
+<head>
+  <title>AAA Testing and its functionality</title>
+  <style>
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    .topnav a {
+      float: right;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .topnav a.active {
+      background-color:aqua;
+      color: white;
+    }
+    .history {
+      margin: 0;
+      padding: 5px;
+      background-color: lightgray;
+    }
+    .b1{
+      color: black;
+      font-family: Georgia;
+      text-decoration-color: lightslategray;
+    }
+    .history > h1 {
+      margin: 10px;
+      padding: 5px;
+      background-color:transparent;
+    }
+
+    header{
+      text-align: center;
+      color:whitesmoke;
+
+    }
+
+    footer {
+      text-align: center;
+      padding: 3px;
+      background-color: darkslategrey;
+      color: white;
+    }
+    .subHistory {
+      margin: 4px;
+      font-family: Georgia;
+      background: white;
+      margin:5px;
+      padding:5px;
+    }
+    header {
+      width: 1250px;
+      height: 90px;
+      background-image: url('bubhead.jpg');
+    }
+  </style>
+</head>
+<body style="background-color:powderblue;">
+
+<header>
+
+  <h1 class="b1">AAA TESTING</h1>
+</header>
+    <a class="active" href="/Article 1">python</a>
+    <a class="active" href="/Article 2">AAA TESTING</a>
+    <a class="active" href="/Article 3">Calculator</a>
+    <a class="active" href="/Article 4">Seperation of concerns</a>
+   <a class="active" href="/">Calculator simulation</a>
+
+<article class=OOPS>
+  <img src="{{url_for('static', filename='AAA.png')}}">
+  <p class="b1">What is AAA TESTING?</p>
+  <p>
+    Arrange/Act/Assert (AAA) is a pattern for arranging and formatting code in Unit Test methods.
+
+    It is a best practice to author your tests in more natural and convenient way. The idea is to develop a unit test by following these 3 simple steps: <ul>
+
+  <li>Arrange – setup the testing objects and prepare the prerequisites for your test.</li>
+  <li>Act – perform the actual work of the test.</li>
+  <li>Assert – verify the result.</li>
+   </ul></p>
+</article>
+<article class="subHistory">
+  <ul>
+    <li>How to write Unit Tests (The AAA Model)</li>
+    <p>All unit tests must be written using AAA model where AAA expands to Arrange, Act & Assert. Here is what is meant by it: <ul>
+     <li> Arrange → Setting up of all the prerequisites required for the test to run </li>
+     <li> Act → Run the actual code under test </li>
+     <li> Assert → Verify whether the code is indeed running as expected </li>
+    </ul></p>
+    <h1>EXAMPLE:</h1>
+    <img src="{{url_for('static', filename='AAATEST1.jpg')}}">
+
+  </ul>
+
+</article>
+<article class="subHistory">
+  <ul>
+    <li>“Arranging” → Problems and Duplication</li>
+    <p>In the example above, we’ve passed a,b to the sum function, let’s assume that we also need to test the sum function by passing b,a , so we need to write two test functions for the same</p>
+    <h1>EXAMPLE:</h1>
+    <img src="{{url_for('static', filename='AAATEST2.jpg')}}">
+    <p>This is a very simple example, but you can see that the Arrange part is duplicated in both functions. If tomorrow, we need to change or want to add some other variable we need to change at both the places.
+    </p>
+  </ul>
+
+</article>
+<article class="subHistory">
+  <ul>
+    <li>ACT:</li>
+    <p>Run the actual code under test.</p>
+    <h1>EXAMPLE:</h1>
+    <img src="{{url_for('static', filename='AAATEST3.jpg')}}">
+
+  </ul>
+
+</article>
+<article class="subHistory">
+  <ul>
+    <li>ASSERT:</li>
+    <p>Verify whether the code is indeed running as expected</p>
+    <h1>EXAMPLE:</h1>
+    <img src="{{url_for('static', filename='AAATEST4.jpg')}}">
+
+  </ul>
+
+<footer>
+  <p>AAA TESTING<br>
+    <a href="Varun:vj6@njit.edu">Varun Jagannathan</a></p>
+</footer>
+
+</body>
+</html>
